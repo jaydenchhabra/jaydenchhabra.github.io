@@ -18,7 +18,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #07080c;
+      background:
+        linear-gradient(180deg, #0b0d12 0%, #10141c 42%, #0c1116 100%);
       color: white;
       overflow-x: hidden;
       line-height: 1.6;
@@ -96,7 +97,7 @@
     .nav-btn {
       padding: 10px 18px;
       border-radius: 999px;
-      background: white;
+      background: linear-gradient(135deg, #ffffff, #ffd166);
       color: #08090d;
       font-weight: 700;
     }
@@ -144,7 +145,867 @@
       background: linear-gradient(
         90deg,
         #ffffff,
-        #7ea2ff,
-        #b875ff,
+        #6ee7d8,
+        #ffd166,
+        #ff7a90,
         #ffffff
       );
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: #b9bcc7;
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.2s ease;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ffffff, #ffd166);
+      color: #08090d;
+    }
+
+    .btn-secondary {
+      background: rgba(110,231,216,0.08);
+      border: 1px solid rgba(110,231,216,0.24);
+      color: white;
+    }
+
+    .stats {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      min-width: 140px;
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .stat:nth-child(1) {
+      border-color: rgba(255,209,102,0.28);
+    }
+
+    .stat:nth-child(2) {
+      border-color: rgba(255,122,144,0.28);
+    }
+
+    .stat:nth-child(3) {
+      border-color: rgba(110,231,216,0.28);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: #b9bcc7;
+      font-size: 0.92rem;
+    }
+
+    .mockup {
+      border-radius: 32px;
+      padding: 18px;
+      background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.15),
+        rgba(255,255,255,0.03)
+      );
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 30px 90px rgba(0,0,0,0.5);
+    }
+
+    .browser {
+      border-radius: 24px;
+      overflow: hidden;
+      background: #11131a;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .browser-top {
+      height: 45px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot:nth-child(1) {
+      background: #ff5f57;
+    }
+
+    .dot:nth-child(2) {
+      background: #ffbd2e;
+    }
+
+    .dot:nth-child(3) {
+      background: #28c840;
+    }
+
+    .browser-body {
+      padding: 30px;
+      min-height: 390px;
+      background:
+        radial-gradient(circle at top right,
+        rgba(255,209,102,0.22),
+        transparent 34%),
+        linear-gradient(135deg,#182132,#11161d 45%, #17131f);
+    }
+
+    .fake-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 45px;
+    }
+
+    .fake-logo {
+      width: 140px;
+      height: 16px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #6ee7d8, #ffffff);
+    }
+
+    .fake-btn {
+      width: 110px;
+      height: 32px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ffd166, #ff7a90);
+    }
+
+    .fake-title {
+      font-size: 2.3rem;
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 20px;
+      max-width: 330px;
+    }
+
+    .fake-lines {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .fake-lines div {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.2);
+    }
+
+    .fake-lines div:nth-child(1) { width: 90%; }
+    .fake-lines div:nth-child(2) { width: 72%; }
+    .fake-lines div:nth-child(3) { width: 50%; }
+
+    .fake-cards {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 12px;
+    }
+
+    .fake-card {
+      height: 90px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .fake-card:nth-child(1) {
+      background: rgba(110,231,216,0.12);
+      border-color: rgba(110,231,216,0.24);
+    }
+
+    .fake-card:nth-child(2) {
+      background: rgba(255,209,102,0.12);
+      border-color: rgba(255,209,102,0.24);
+    }
+
+    .fake-card:nth-child(3) {
+      background: rgba(255,122,144,0.12);
+      border-color: rgba(255,122,144,0.24);
+    }
+
+    section {
+      padding: 95px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    section:nth-of-type(even) {
+      background: rgba(255,255,255,0.025);
+    }
+
+    .section-label {
+      color: #6ee7d8;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 16px;
+    }
+
+    .section-intro {
+      color: #b9bcc7;
+      max-width: 720px;
+      margin-bottom: 38px;
+      font-size: 1.05rem;
+    }
+
+    .cards,
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 22px;
+    }
+
+    .card,
+    .panel {
+      background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.07),
+        rgba(255,255,255,0.03)
+      );
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 30px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.22);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,209,102,0.42);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: rgba(110,231,216,0.16);
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      font-size: 1.3rem;
+    }
+
+    .card:nth-child(2) .icon {
+      background: rgba(255,209,102,0.18);
+    }
+
+    .card:nth-child(3) .icon {
+      background: rgba(255,122,144,0.16);
+    }
+
+    .card h3,
+    .trust-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card p,
+    .panel p,
+    .trust-item p {
+      color: #b9bcc7;
+    }
+
+    .trust-item {
+      padding: 24px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .trust-number {
+      color: #ffd166;
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .trust-item:nth-child(2) .trust-number {
+      color: #6ee7d8;
+    }
+
+    .trust-item:nth-child(3) .trust-number {
+      color: #ff7a90;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .project-preview {
+      border-radius: 28px;
+      padding: 30px;
+      min-height: 270px;
+      background:
+        radial-gradient(circle at 70% 20%,
+        rgba(255,122,144,0.2),
+        transparent 32%),
+        linear-gradient(135deg,#142126,#181523 52%, #241817);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .project-preview h3 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+
+    .mini-btn {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 11px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #ffd166, #ffffff);
+      color: #08090d;
+      font-weight: 700;
+    }
+
+    .price {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -2px;
+      margin: 10px 0;
+      color: #ffd166;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .contact-link {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    footer {
+      padding: 34px 0;
+      text-align: center;
+      color: #8f93a3;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    @media (max-width: 950px) {
+      .hero-grid,
+      .cards,
+      .trust-grid,
+      .work-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-btn {
+        display: none;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      nav {
+        height: auto;
+        padding: 14px 0;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 18px;
+        font-size: 0.9rem;
+      }
+
+      .nav-links li:nth-child(3) {
+        display: none;
+      }
+
+      .hero {
+        padding: 56px 0 64px;
+      }
+
+      h1 {
+        font-size: clamp(2.65rem, 15vw, 3.45rem);
+        line-height: 1;
+      }
+
+      .hero p {
+        font-size: 1.03rem;
+        margin-bottom: 26px;
+      }
+
+      .buttons {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 18px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .stat {
+        min-width: 0;
+        padding: 14px 16px;
+      }
+
+      .browser-body {
+        min-height: 320px;
+        padding: 24px;
+      }
+
+      .fake-nav {
+        margin-bottom: 34px;
+      }
+
+      .fake-title {
+        font-size: 1.9rem;
+      }
+
+      .fake-cards {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .card,
+      .panel,
+      .project-preview {
+        border-radius: 22px;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="glow"></div>
+  <div class="glow2"></div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Jayden Web Design</div>
+
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a class="nav-btn" href="#contact">
+          Free Review
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="badge">
+            <span></span>
+            Web Design for Local Businesses
+          </div>
+
+          <h1>
+            Modern websites that make businesses look
+            <span class="gradient-text">premium.</span>
+          </h1>
+
+          <p>
+            I build clean, mobile-friendly websites for local businesses
+            that help create a stronger first impression and make it easier
+            for customers to connect and book online.
+          </p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#contact">
+              Get a Free Website Review
+            </a>
+
+            <a class="btn btn-secondary" href="#work">
+              View Sample Work
+            </a>
+          </div>
+
+          <div class="stats">
+
+            <div class="stat">
+              <strong>$700+</strong>
+              <span>Starting price</span>
+            </div>
+
+            <div class="stat">
+              <strong>Modern</strong>
+              <span>Clean layouts</span>
+            </div>
+
+            <div class="stat">
+              <strong>Mobile</strong>
+              <span>Friendly design</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="mockup">
+
+          <div class="browser">
+
+            <div class="browser-top">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+
+            <div class="browser-body">
+
+              <div class="fake-nav">
+                <div class="fake-logo"></div>
+                <div class="fake-btn"></div>
+              </div>
+
+              <div class="fake-title">
+                BrightSmile Dental
+              </div>
+
+              <div class="fake-lines">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div class="fake-cards">
+                <div class="fake-card"></div>
+                <div class="fake-card"></div>
+                <div class="fake-card"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+
+        <div class="section-label">Services</div>
+
+        <h2>
+          Clean website upgrades for local businesses.
+        </h2>
+
+        <p class="section-intro">
+          I focus on modern layouts, mobile-friendly pages,
+          and simple booking/contact systems that help businesses
+          look more professional online.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+            <div class="icon">✦</div>
+            <h3>Website Redesign</h3>
+            <p>
+              Upgrade outdated websites into cleaner, sharper,
+              and more modern designs.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">▣</div>
+            <h3>Mobile-Friendly Sites</h3>
+            <p>
+              Websites designed to look great on phones,
+              tablets, and computers.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">↗</div>
+            <h3>Online Booking Setup</h3>
+            <p>
+              Add simple booking and contact systems
+              for customers.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+
+        <div class="section-label">Sample Work</div>
+
+        <h2>
+          Example website concept.
+        </h2>
+
+        <p class="section-intro">
+          A sample business layout showing the type
+          of modern design I can build.
+        </p>
+
+        <div class="work-grid">
+
+          <div class="project-preview">
+            <h3>BrightSmile Dental</h3>
+
+            <p>
+              A modern dental website concept with a clean
+              layout and easy appointment booking.
+            </p>
+
+            <span class="mini-btn">
+              Demo Coming Soon
+            </span>
+          </div>
+
+          <div class="panel">
+
+            <h3 style="margin-bottom:14px;">
+              What this demo shows
+            </h3>
+
+            <p>
+              This project demonstrates how a business website
+              can feel cleaner, more premium, and easier
+              for customers to use.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+
+        <div class="section-label">About</div>
+
+        <h2>
+          Clean design from someone who cares about the details.
+        </h2>
+
+        <div class="panel">
+
+          <p>
+            I build clean, modern websites for small businesses in the Denver area.
+            I am a rising junior at Cherry Creek High School, and I focus on simple,
+            professional sites that are easy for customers to use on any device.
+          </p>
+
+          <p style="margin-top:14px;">
+            My goal is to help local businesses make a stronger first impression
+            without overcomplicating the process. You get a sharp design, clear
+            communication, and a website built around what your customers actually need.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="trust">
+      <div class="container">
+
+        <div class="section-label">Why Work With Me</div>
+
+        <h2>
+          A simple process built around clear results.
+        </h2>
+
+        <p class="section-intro">
+          Even if your business only needs a few pages, the site should still feel
+          polished, reliable, and easy for customers to understand.
+        </p>
+
+        <div class="trust-grid">
+
+          <div class="trust-item">
+            <span class="trust-number">01</span>
+            <h3>Fast Communication</h3>
+            <p>
+              I keep the process simple and respond clearly so you know what is
+              happening at each step.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <span class="trust-number">02</span>
+            <h3>Mobile-First Design</h3>
+            <p>
+              Your website is designed to work well on phones first, where many
+              customers will find you.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <span class="trust-number">03</span>
+            <h3>Clear Pricing</h3>
+            <p>
+              Projects start at $700, with final pricing based on the number of
+              pages and features you need.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+
+        <div class="section-label">Pricing</div>
+
+        <h2>
+          Professional websites starting at $700.
+        </h2>
+
+        <div class="panel">
+
+          <p>
+            A clean, mobile-friendly website build starts at
+          </p>
+
+          <div class="price">
+            $700
+          </div>
+
+          <p>
+            Final pricing depends on the number of pages, design complexity,
+            and features like booking forms, contact systems, or custom sections.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+
+        <div class="section-label">Contact</div>
+
+        <h2>
+          Want a free website review?
+        </h2>
+
+        <div class="contact-box">
+
+          <div class="panel">
+
+            <h3 style="margin-bottom:14px;">
+              Let's improve your website.
+            </h3>
+
+            <p>
+              Send me your current website and I can review it
+              and suggest ways to improve the design and experience.
+            </p>
+
+          </div>
+
+          <div class="contact-links">
+
+            <a class="contact-link"
+               href="mailto:Jaydenchhabra1@gmail.com">
+              jaydenchhabra1@gmail.com
+            </a>
+
+            <a class="contact-link"
+               href="tel:7202572723">
+              720-257-2723
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Jayden Web Design. All rights reserved.
+  </footer>
+
+</body>
+</html>
